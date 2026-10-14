@@ -6,7 +6,7 @@ Máquina de café desarrollada en Kotlin que permite seleccionar un tipo de caf�
 
 ## Diagrama de estados:
 
-![diagrama_estados.png](diagrama_estados.png)
+![Diagrama de estados](diagrama_estados.png)
 
 ## Estados:
 
