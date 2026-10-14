@@ -107,7 +107,7 @@ open class MaquinaCafe {
      * @param recipiente Tipo de recipiente.
      */
     protected open fun servirCafe(marca: String, recipiente: String) {
-        println("SIRVIENDO CAFÉ... ¡ NO LO JUNTES CON UN SIGARRO jjj !")
+        println("SIRVIENDO CAFÉ...")
         estadoActual = EstadoMaquinaCafe.SirviendoCafe(marca, recipiente)
     }
 
