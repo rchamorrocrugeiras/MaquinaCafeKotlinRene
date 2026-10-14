@@ -8,6 +8,31 @@ Máquina de café desarrollada en Kotlin que permite seleccionar un tipo de caf�
 
 ![Diagrama de estados](diagrama_estados.png)
 
+## Diagrama de estados (en mermaid):
+
+```mermaid
+stateDiagram-v2
+    [*] --> Apagada
+
+    Apagada --> SeleccionandoProducto : encender()
+
+    SeleccionandoProducto --> SeleccionandoProducto : insertarCredito()
+
+    SeleccionandoProducto --> PreparandoCafe : seleccionarProducto() / credito >= precio
+
+    SeleccionandoProducto --> Error : seleccionarProducto() / credito < precio
+
+    PreparandoCafe --> SirviendoCafe : prepararCafe() completado
+
+    PreparandoCafe --> Error : fallo en la preparación
+
+    SirviendoCafe --> Apagada : apagar() / reset()
+
+    Error --> Apagada : reset()
+
+    SeleccionandoProducto --> Apagada : apagar() / reset()
+```
+
 ## Estados:
 
 - **Apagada:** La máquina está apagada y no permite seleccionar productos ni insertar crédito.
