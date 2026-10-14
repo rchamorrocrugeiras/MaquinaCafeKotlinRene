@@ -6,6 +6,8 @@ Máquina de café desarrollada en Kotlin que permite seleccionar un tipo de caf�
 
 ## Diagrama de estados:
 
+![diagrama_estados.png](diagrama_estados.png)
+
 ## Estados:
 
 - **Apagada:** La máquina está apagada y no permite seleccionar productos ni insertar crédito.
